@@ -1,24 +1,360 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKF-5s-fPp">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="phw18_2_scrollviewDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aji-we-PMC">
+                                <rect key="frame" x="10" y="69" width="373" height="739"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="60A-9M-eEu">
+                                        <rect key="frame" x="0.0" y="0.0" width="1119" height="739"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01白玉歐蕾" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-Aa-RbY">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="739"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02冷露歐蕾" translatesAutoresizingMaskIntoConstraints="NO" id="wYa-Zx-XcL">
+                                                <rect key="frame" x="373" y="0.0" width="373" height="739"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03熟成歐蕾" translatesAutoresizingMaskIntoConstraints="NO" id="Pw6-mr-8Qo">
+                                                <rect key="frame" x="746" y="0.0" width="373" height="739"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RCd-Aa-RbY" firstAttribute="height" secondItem="HNi-dd-kiB" secondAttribute="height" id="1yX-fT-i8H"/>
+                                    <constraint firstItem="RCd-Aa-RbY" firstAttribute="width" secondItem="HNi-dd-kiB" secondAttribute="width" id="G7d-qv-mav"/>
+                                    <constraint firstItem="60A-9M-eEu" firstAttribute="top" secondItem="ieY-WG-fcG" secondAttribute="top" id="Ghd-rd-lju"/>
+                                    <constraint firstItem="60A-9M-eEu" firstAttribute="bottom" secondItem="ieY-WG-fcG" secondAttribute="bottom" id="KMf-Ps-Se6"/>
+                                    <constraint firstItem="60A-9M-eEu" firstAttribute="trailing" secondItem="ieY-WG-fcG" secondAttribute="trailing" id="pWy-vt-nEL"/>
+                                    <constraint firstItem="60A-9M-eEu" firstAttribute="leading" secondItem="ieY-WG-fcG" secondAttribute="leading" id="rG8-i1-X11"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ieY-WG-fcG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="HNi-dd-kiB"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aji-we-PMC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DY6-xo-WJd"/>
+                            <constraint firstItem="aji-we-PMC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="d5U-TQ-3QK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aji-we-PMC" secondAttribute="trailing" constant="10" id="u8U-hv-Piq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aji-we-PMC" secondAttribute="bottom" constant="10" id="uIw-dm-wV1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-54.198473282442748" y="-27.464788732394368"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="cHp-qZ-byd">
+            <objects>
+                <viewController id="FKF-5s-fPp" customClass="pageViewController" customModule="phw18_2_scrollviewDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6x-2I-lO1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgj-Da-w9e" userLabel="Scroll View A">
+                                <rect key="frame" x="10" y="69" width="373" height="739"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fYF-qU-qEU">
+                                        <rect key="frame" x="0.0" y="0.0" width="1865" height="739"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="ejJ-Ui-QVZ" userLabel="Content Scroll View B">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="739"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01白玉歐蕾" translatesAutoresizingMaskIntoConstraints="NO" id="CF8-VU-GMN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="739"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="白玉歐蕾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGQ-u9-fLe">
+                                                        <rect key="frame" x="136.66666666666666" y="355.33333333333331" width="100" height="28.666666666666686"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="h2m-Qm-siH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台灣手搖飲不可或缺的經典—— 珍珠鮮奶茶。軟嫩嚼感的白玉珍珠，恰似摩登女子的珍珠首飾，以奢華感獨領風潮。與熟成歐蕾完美結合，口感厚實而層次豐富，是一場難以忘懷的味覺饗宴。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w2-Ix-1pd">
+                                                        <rect key="frame" x="82" y="392" width="209" height="229"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="229" id="HR3-my-F9A"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="CF8-VU-GMN" firstAttribute="bottom" secondItem="m7O-lN-qwu" secondAttribute="bottom" id="4Vk-ft-lAb"/>
+                                                    <constraint firstItem="9ja-sW-pWh" firstAttribute="bottom" secondItem="4w2-Ix-1pd" secondAttribute="bottom" constant="118" id="5yM-IP-bRx"/>
+                                                    <constraint firstItem="CF8-VU-GMN" firstAttribute="width" secondItem="9ja-sW-pWh" secondAttribute="width" id="Bwc-CH-jks"/>
+                                                    <constraint firstItem="4w2-Ix-1pd" firstAttribute="leading" secondItem="9ja-sW-pWh" secondAttribute="leading" constant="82" id="K9U-GP-Pjc"/>
+                                                    <constraint firstItem="CF8-VU-GMN" firstAttribute="leading" secondItem="m7O-lN-qwu" secondAttribute="leading" id="Mpu-PZ-WYn"/>
+                                                    <constraint firstItem="9ja-sW-pWh" firstAttribute="trailing" secondItem="4w2-Ix-1pd" secondAttribute="trailing" constant="82" id="XNN-dK-umD"/>
+                                                    <constraint firstItem="IGQ-u9-fLe" firstAttribute="centerX" secondItem="4w2-Ix-1pd" secondAttribute="centerX" id="da1-CL-UBw"/>
+                                                    <constraint firstItem="CF8-VU-GMN" firstAttribute="trailing" secondItem="m7O-lN-qwu" secondAttribute="trailing" id="fum-a8-soZ"/>
+                                                    <constraint firstItem="4w2-Ix-1pd" firstAttribute="top" secondItem="IGQ-u9-fLe" secondAttribute="bottom" constant="8" symbolic="YES" id="ghC-iO-TZF"/>
+                                                    <constraint firstItem="CF8-VU-GMN" firstAttribute="height" secondItem="9ja-sW-pWh" secondAttribute="height" id="qHI-Xv-fEX"/>
+                                                    <constraint firstItem="CF8-VU-GMN" firstAttribute="top" secondItem="m7O-lN-qwu" secondAttribute="top" id="t5R-gD-xah"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="m7O-lN-qwu"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="9ja-sW-pWh"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FKF-5s-fPp" id="DS2-jx-Tic"/>
+                                                </connections>
+                                            </scrollView>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="rnE-1c-jg3" userLabel="Content Scroll View B">
+                                                <rect key="frame" x="373" y="0.0" width="373" height="739"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02冷露歐蕾" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-0Y-PwE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="739"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冷露歐蕾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUE-SA-G2j" userLabel="冷露歐蕾">
+                                                        <rect key="frame" x="136.66666666666663" y="355.33333333333331" width="100" height="28.666666666666686"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="yHC-C1-trg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冬瓜與濃醇鮮奶一絲一著、輕巧地流露於唇齒間，雅緻的氣味宛如裁縫女子手中的針線，絲絲入扣地編織交纏，飲啜之間伴隨期盼歸來的情感，一股熟悉的奶香與甜香。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FF-Bd-XGX">
+                                                        <rect key="frame" x="82" y="392" width="209" height="229"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="229" id="V3T-Rn-Vul"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="IHA-0Y-PwE" firstAttribute="top" secondItem="9Cg-NO-dr9" secondAttribute="top" id="4fr-E2-v0z"/>
+                                                    <constraint firstItem="6FF-Bd-XGX" firstAttribute="top" secondItem="BUE-SA-G2j" secondAttribute="bottom" constant="8" id="8aJ-WO-JJY"/>
+                                                    <constraint firstItem="IHA-0Y-PwE" firstAttribute="trailing" secondItem="9Cg-NO-dr9" secondAttribute="trailing" id="AR6-Hv-ouw"/>
+                                                    <constraint firstItem="6FF-Bd-XGX" firstAttribute="leading" secondItem="GMI-I5-qN9" secondAttribute="leading" constant="82" id="FDe-cK-bxe"/>
+                                                    <constraint firstItem="IHA-0Y-PwE" firstAttribute="height" secondItem="GMI-I5-qN9" secondAttribute="height" id="Inr-FJ-hXN"/>
+                                                    <constraint firstItem="GMI-I5-qN9" firstAttribute="trailing" secondItem="6FF-Bd-XGX" secondAttribute="trailing" constant="82" id="VFm-Q4-LLL"/>
+                                                    <constraint firstItem="IHA-0Y-PwE" firstAttribute="width" secondItem="GMI-I5-qN9" secondAttribute="width" id="Z5s-tf-QKF"/>
+                                                    <constraint firstItem="GMI-I5-qN9" firstAttribute="bottom" secondItem="6FF-Bd-XGX" secondAttribute="bottom" constant="118" id="Znd-yQ-GFF"/>
+                                                    <constraint firstItem="BUE-SA-G2j" firstAttribute="centerX" secondItem="6FF-Bd-XGX" secondAttribute="centerX" id="ZsK-Yd-wmT"/>
+                                                    <constraint firstItem="IHA-0Y-PwE" firstAttribute="leading" secondItem="9Cg-NO-dr9" secondAttribute="leading" id="nzU-Bz-Y7O"/>
+                                                    <constraint firstItem="IHA-0Y-PwE" firstAttribute="bottom" secondItem="9Cg-NO-dr9" secondAttribute="bottom" id="omk-yp-Sil"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="9Cg-NO-dr9"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="GMI-I5-qN9"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FKF-5s-fPp" id="IuN-fN-a6p"/>
+                                                </connections>
+                                            </scrollView>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="Cih-vv-6rn" userLabel="Content Scroll View B">
+                                                <rect key="frame" x="746" y="0.0" width="373" height="739"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03熟成歐蕾" translatesAutoresizingMaskIntoConstraints="NO" id="UU9-Xt-5mX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="739"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="熟成歐蕾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b72-rv-npy">
+                                                        <rect key="frame" x="138.66666666666663" y="355.33333333333331" width="100" height="28.666666666666686"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="764-jF-aIl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="渲染漸變的茶色，猶如街頭嬉皮風趣的男子，口中恣意地哼著音階。濃郁的紅茶香，本是味覺記憶中的絕品，與溫順甘醇的鮮奶兩相平衡，為奶茶的底蘊更添一股味蕾衝擊，絲滑細膩使人覺醒。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9Y-58-W1z">
+                                                        <rect key="frame" x="84" y="392" width="209" height="229"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="229" id="peb-xc-G4s"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="n9Y-58-W1z" firstAttribute="top" secondItem="b72-rv-npy" secondAttribute="bottom" constant="8" symbolic="YES" id="0Ba-1M-Lp4"/>
+                                                    <constraint firstItem="n9Y-58-W1z" firstAttribute="leading" secondItem="1UB-fC-4Ht" secondAttribute="leading" constant="84" id="9TY-Iu-bHx"/>
+                                                    <constraint firstItem="UU9-Xt-5mX" firstAttribute="top" secondItem="gGz-dO-AU4" secondAttribute="top" id="Bsx-oz-loc"/>
+                                                    <constraint firstItem="1UB-fC-4Ht" firstAttribute="trailing" secondItem="n9Y-58-W1z" secondAttribute="trailing" constant="80" id="RX1-mB-Z0C"/>
+                                                    <constraint firstItem="UU9-Xt-5mX" firstAttribute="trailing" secondItem="gGz-dO-AU4" secondAttribute="trailing" id="hfq-j4-34S"/>
+                                                    <constraint firstItem="UU9-Xt-5mX" firstAttribute="width" secondItem="1UB-fC-4Ht" secondAttribute="width" id="kYL-6F-HGZ"/>
+                                                    <constraint firstItem="UU9-Xt-5mX" firstAttribute="bottom" secondItem="gGz-dO-AU4" secondAttribute="bottom" id="nYb-19-0Cy"/>
+                                                    <constraint firstItem="1UB-fC-4Ht" firstAttribute="bottom" secondItem="n9Y-58-W1z" secondAttribute="bottom" constant="118" id="ta1-Pf-ARb"/>
+                                                    <constraint firstItem="UU9-Xt-5mX" firstAttribute="leading" secondItem="gGz-dO-AU4" secondAttribute="leading" id="tjP-8Q-eRW"/>
+                                                    <constraint firstItem="UU9-Xt-5mX" firstAttribute="height" secondItem="1UB-fC-4Ht" secondAttribute="height" id="vsn-r5-k8j"/>
+                                                    <constraint firstItem="b72-rv-npy" firstAttribute="centerX" secondItem="n9Y-58-W1z" secondAttribute="centerX" id="waI-c7-b1b"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="gGz-dO-AU4"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="1UB-fC-4Ht"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FKF-5s-fPp" id="1xi-yT-8ic"/>
+                                                </connections>
+                                            </scrollView>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="npL-tb-nge" userLabel="Content Scroll View B">
+                                                <rect key="frame" x="1119" y="0.0" width="373" height="739"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="04金蜜歐蕾" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-uq-F0b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="739"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金蜜歐蕾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5O-YQ-6YW">
+                                                        <rect key="frame" x="138.66666666666674" y="355.33333333333331" width="100" height="28.666666666666686"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="rVc-PY-xsY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以經典熟成紅茶，加上濃純鮮奶，是恰如其分的鮮奶茶，再以蜂蜜點綴唇舌上的奧妙風味，讓這支飲品更是耐人尋味。 ＊無糖僅蜂蜜甜，另有少蜜選項，正常甜與微糖會額外加糖液。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrW-8m-A1y">
+                                                        <rect key="frame" x="84" y="392" width="209" height="229"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="229" id="6x7-pp-dm1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bNw-uq-F0b" firstAttribute="bottom" secondItem="D8g-9p-drX" secondAttribute="bottom" id="Ds1-Gg-Orn"/>
+                                                    <constraint firstItem="bNw-uq-F0b" firstAttribute="leading" secondItem="D8g-9p-drX" secondAttribute="leading" id="Npg-N5-Gvl"/>
+                                                    <constraint firstItem="RrW-8m-A1y" firstAttribute="leading" secondItem="7Sp-Q5-131" secondAttribute="leading" constant="84" id="PTS-Qr-DfR"/>
+                                                    <constraint firstItem="bNw-uq-F0b" firstAttribute="trailing" secondItem="D8g-9p-drX" secondAttribute="trailing" id="Qr4-7o-PpG"/>
+                                                    <constraint firstItem="RrW-8m-A1y" firstAttribute="top" secondItem="v5O-YQ-6YW" secondAttribute="bottom" constant="8" symbolic="YES" id="UYR-iD-Z2f"/>
+                                                    <constraint firstItem="bNw-uq-F0b" firstAttribute="height" secondItem="7Sp-Q5-131" secondAttribute="height" id="W2N-cM-0Px"/>
+                                                    <constraint firstItem="v5O-YQ-6YW" firstAttribute="centerX" secondItem="RrW-8m-A1y" secondAttribute="centerX" id="WLE-q0-zVN"/>
+                                                    <constraint firstItem="bNw-uq-F0b" firstAttribute="width" secondItem="7Sp-Q5-131" secondAttribute="width" id="WYA-P4-YDT"/>
+                                                    <constraint firstItem="bNw-uq-F0b" firstAttribute="top" secondItem="D8g-9p-drX" secondAttribute="top" id="dot-ZX-ffg"/>
+                                                    <constraint firstItem="7Sp-Q5-131" firstAttribute="bottom" secondItem="RrW-8m-A1y" secondAttribute="bottom" constant="118" id="lTv-UV-NJa"/>
+                                                    <constraint firstItem="7Sp-Q5-131" firstAttribute="trailing" secondItem="RrW-8m-A1y" secondAttribute="trailing" constant="80" id="qvj-wQ-2iH"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="D8g-9p-drX"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="7Sp-Q5-131"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FKF-5s-fPp" id="oGn-3Y-l5I"/>
+                                                </connections>
+                                            </scrollView>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="2WE-Xb-NR2" userLabel="Content Scroll View B">
+                                                <rect key="frame" x="1492" y="0.0" width="373" height="739"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="05黑蜜歐蕾" translatesAutoresizingMaskIntoConstraints="NO" id="6sr-9S-btf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="739"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="黑蜜歐蕾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-iU-bql">
+                                                        <rect key="frame" x="137" y="355" width="98" height="29"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="以經典不敗的紅茶，搭配鮮奶是醇厚的鮮奶茶，雙向奔赴而來的是恰如其分的餅香炒糖韻，不過於甜膩卻帶出更佳的香氣，讓人一飲成癮。 ＊正常甜僅黑蜜甜度，另有少黑蜜選項，多糖則會額外加糖液。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuz-Kv-F4r">
+                                                        <rect key="frame" x="84" y="392" width="209" height="229"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="6sr-9S-btf" firstAttribute="top" secondItem="B1c-95-on0" secondAttribute="top" id="F4M-zn-SvM"/>
+                                                    <constraint firstItem="6sr-9S-btf" firstAttribute="leading" secondItem="B1c-95-on0" secondAttribute="leading" id="Qx2-ck-SQT"/>
+                                                    <constraint firstItem="6sr-9S-btf" firstAttribute="width" secondItem="Kvf-Cc-Jdf" secondAttribute="width" id="UsQ-gK-f6d"/>
+                                                    <constraint firstItem="6sr-9S-btf" firstAttribute="trailing" secondItem="B1c-95-on0" secondAttribute="trailing" id="WDw-MR-rjr"/>
+                                                    <constraint firstItem="6sr-9S-btf" firstAttribute="height" secondItem="Kvf-Cc-Jdf" secondAttribute="height" id="ZWM-4W-LzH"/>
+                                                    <constraint firstItem="6sr-9S-btf" firstAttribute="bottom" secondItem="B1c-95-on0" secondAttribute="bottom" id="pZg-Rj-cP4"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="B1c-95-on0"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="Kvf-Cc-Jdf"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FKF-5s-fPp" id="iAM-yb-i9p"/>
+                                                </connections>
+                                            </scrollView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fYF-qU-qEU" firstAttribute="bottom" secondItem="de5-YK-baU" secondAttribute="bottom" id="2gk-P4-Sll"/>
+                                    <constraint firstItem="ejJ-Ui-QVZ" firstAttribute="height" secondItem="SGZ-3X-mai" secondAttribute="height" id="4wn-J6-OCU"/>
+                                    <constraint firstItem="fYF-qU-qEU" firstAttribute="leading" secondItem="de5-YK-baU" secondAttribute="leading" id="5ev-cd-2Jz"/>
+                                    <constraint firstItem="fYF-qU-qEU" firstAttribute="trailing" secondItem="de5-YK-baU" secondAttribute="trailing" id="KYS-Rc-Cvt"/>
+                                    <constraint firstItem="ejJ-Ui-QVZ" firstAttribute="width" secondItem="SGZ-3X-mai" secondAttribute="width" id="QEH-ZX-cpb"/>
+                                    <constraint firstItem="fYF-qU-qEU" firstAttribute="top" secondItem="de5-YK-baU" secondAttribute="top" id="kQl-75-66C"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="de5-YK-baU"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="SGZ-3X-mai"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FKF-5s-fPp" id="V4J-dD-ASR"/>
+                                </connections>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vAw-Az-QGT">
+                                <rect key="frame" x="297" y="69" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="B1X-aa-3ft"/>
+                                    <constraint firstAttribute="height" constant="60" id="QOX-H4-eyo"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Rm-Ej-Tdc">
+                                <rect key="frame" x="121.33333333333333" y="782.33333333333337" width="150.66666666666669" height="25.666666666666629"/>
+                                <color key="currentPageIndicatorTintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changePage:" destination="FKF-5s-fPp" eventType="valueChanged" id="3cB-qi-rcy"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GK0-AK-nfq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mgj-Da-w9e" firstAttribute="top" secondItem="GK0-AK-nfq" secondAttribute="top" constant="10" id="H3W-gY-RAi"/>
+                            <constraint firstItem="GK0-AK-nfq" firstAttribute="trailing" secondItem="mgj-Da-w9e" secondAttribute="trailing" constant="10" id="R4L-PS-tuS"/>
+                            <constraint firstItem="GK0-AK-nfq" firstAttribute="bottom" secondItem="mgj-Da-w9e" secondAttribute="bottom" constant="10" id="XQv-ux-OCB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vAw-Az-QGT" secondAttribute="trailing" id="gDa-xA-WXH"/>
+                            <constraint firstItem="vAw-Az-QGT" firstAttribute="top" secondItem="GK0-AK-nfq" secondAttribute="top" constant="10" id="lMJ-oK-0QA"/>
+                            <constraint firstItem="GK0-AK-nfq" firstAttribute="bottom" secondItem="4Rm-Ej-Tdc" secondAttribute="bottom" constant="10" id="maS-UU-Uqe"/>
+                            <constraint firstItem="4Rm-Ej-Tdc" firstAttribute="centerX" secondItem="h6x-2I-lO1" secondAttribute="centerX" id="nPP-k3-wI6"/>
+                            <constraint firstItem="mgj-Da-w9e" firstAttribute="leading" secondItem="GK0-AK-nfq" secondAttribute="leading" constant="10" id="q4k-Be-Efs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="4Rm-Ej-Tdc" id="Yhb-xB-ksK"/>
+                        <outlet property="scrollView" destination="mgj-Da-w9e" id="vpf-Xh-ZqO"/>
+                        <outletCollection property="drinkImageViews" destination="CF8-VU-GMN" collectionClass="NSMutableArray" id="kPY-bG-EIa"/>
+                        <outletCollection property="drinkImageViews" destination="IHA-0Y-PwE" collectionClass="NSMutableArray" id="dvq-jd-Tcd"/>
+                        <outletCollection property="drinkImageViews" destination="UU9-Xt-5mX" collectionClass="NSMutableArray" id="gbr-K8-O4P"/>
+                        <outletCollection property="drinkImageViews" destination="bNw-uq-F0b" collectionClass="NSMutableArray" id="Nnd-kv-9v1"/>
+                        <outletCollection property="drinkImageViews" destination="6sr-9S-btf" collectionClass="NSMutableArray" id="idB-sg-lyw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ikh-qx-fgo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54.198473282442748" y="661.97183098591552"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01白玉歐蕾" width="540" height="540"/>
+        <image name="02冷露歐蕾" width="540" height="540"/>
+        <image name="03熟成歐蕾" width="540" height="540"/>
+        <image name="04金蜜歐蕾" width="540" height="540"/>
+        <image name="05黑蜜歐蕾" width="540" height="540"/>
+        <image name="logo" width="603" height="339"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
